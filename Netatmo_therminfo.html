@@ -1,7 +1,7 @@
 <div style="padding:0px; width:150px; height:180px;" class="cmd #history# container-fluid tooltips cmd-widget netatmodisplay" data-type="info" data-version="#version#" data-eqLogic_id="#eqLogic_id#" data-subtype="other" data-cmd_id="#id#" data-cmd_uid="#uid#">
 <div style="position:relative; height:100px">
    <div style="position:absolute;z-index:1">
-      <img src="plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/fondnetatmo.png" width="150px" />
+      <img src="cmd.info.string.Netatmo_therminfo/fondnetatmo.png" width="150px" />
    </div>
    <div class="value-consigneent#id#"></div>
    <div class="value-consigneoff#id#"></div>
@@ -10,14 +10,14 @@
   <div class="value-temperaturedec#id#" style=""></div>
   <marquee class="programmedefile#id#" style="color:black; position:absolute;top:145px;left:10px; width:130px; height:180px; z-index:2; font-size:12px"></marquee>
   <div class="programmefixe#id#" style="color:black; position:absolute;top:145px;left:10px; width:130px; height:180px; z-index:2; font-size:12px"></div>
-  <img class="IMGmode#id#" src="plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/manual.png" />
-  <img class="IMGbatterie#id#" src="plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/battery_min.png" />
-  <img class="IMGwifi#id#" src="plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/wifi_null.png" />
+  <img class="IMGmode#id#" src="cmd.info.string.Netatmo_therminfo/manual.png" />
+  <img class="IMGbatterie#id#" src="cmd.info.string.Netatmo_therminfo/battery_min.png" />
+  <img class="IMGwifi#id#" src="cmd.info.string.Netatmo_therminfo/wifi_null.png" />
 </div>
  	 <style>
 		@font-face {
     		font-family: "Square";
-    		src:  url("plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/Square.ttf") format("truetype");
+    		src:  url("cmd.info.string.Netatmo_therminfo/Square.ttf") format("truetype");
     		font-weight:normal;
     		font-style:normal;
 		}
@@ -179,29 +179,29 @@
       
       			// BATTERIE
                 debug += " - batterie:"+batterie;
-                if ( batterie > 99 ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/battery_full.png');        
-                else if ( batterie > 75  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/battery_big.png');        
-				else if ( batterie > 50  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/battery_medium.png');        
-				else if ( batterie > 25  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/battery_small.png');        
- 				else if ( batterie > 0  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/battery_min.png');        
+                if ( batterie > 99 ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'cmd.info.string.Netatmo_therminfo/battery_full.png');        
+                else if ( batterie > 75  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'cmd.info.string.Netatmo_therminfo/battery_big.png');        
+				else if ( batterie > 50  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'cmd.info.string.Netatmo_therminfo/battery_medium.png');        
+				else if ( batterie > 25  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'cmd.info.string.Netatmo_therminfo/battery_small.png');        
+ 				else if ( batterie > 0  ) $('.cmd[data-cmd_uid=#uid#] .IMGbatterie#id#').empty().attr('src', 'cmd.info.string.Netatmo_therminfo/battery_min.png');        
                 else  $('.cmd[data-cmd_uid=#uid#] .IMGbatterie').hide();   
       
       			// WIFI
                 debug += " - wifi:"+wifi;
-                if ( wifi > 80 ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/wifi_max.png");
-                else if ( wifi > 50  ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/wifi_high.png");
-				else if ( wifi > 20  ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/wifi_medium.png");
- 				else if ( wifi > 0  ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/wifi_null.png");
+                if ( wifi > 80 ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/wifi_max.png");
+                else if ( wifi > 50  ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/wifi_high.png");
+				else if ( wifi > 20  ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/wifi_medium.png");
+ 				else if ( wifi > 0  ) $('.cmd[data-cmd_uid=#uid#] .IMGwifi#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/wifi_null.png");
                 else $('.cmd[data-cmd_uid=#uid#] .IMGwifi').hide();                
 
       
       			// MODE
                 debug += " - mode:"+mode;
- 				if ( mode == "Off" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/manual.png");
-                else if ( mode == "Manuel" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/manual.png");
-      			else if ( mode == "Programme") $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/schedule.png");
-				else if ( mode == "away" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/away.png");
-				else if ( mode == "hg" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "plugins/widget/core/template/dashboard/cmd.info.string.Netatmo_therminfo/hg.png");
+ 				if ( mode == "Off" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/manual.png");
+                else if ( mode == "Manuel" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/manual.png");
+      			else if ( mode == "Programme") $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/schedule.png");
+				else if ( mode == "away" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/away.png");
+				else if ( mode == "hg" ) $('.cmd[data-cmd_uid=#uid#] .IMGmode#id#').empty().attr('src', "cmd.info.string.Netatmo_therminfo/hg.png");
                 else $('.cmd[data-cmd_uid=#uid#] .IMGmode').hide();
       
                  // PROGRAMME
