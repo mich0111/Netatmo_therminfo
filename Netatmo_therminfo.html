@@ -1,15 +1,15 @@
 <div style="padding:0px; width:150px; height:180px;" class="cmd #history# container-fluid tooltips cmd-widget netatmodisplay" data-type="info" data-version="#version#" data-eqLogic_id="#eqLogic_id#" data-subtype="other" data-cmd_id="#id#" data-cmd_uid="#uid#">
 	<div style="position:relative; height:100px">
 		<div style="position:absolute;z-index:1">
-			<img src="data/customTemplates/dashboard/cmd.info.string.Netatmo_therminfo/fondnetatmo.png" width="150px"/>
+			<img src="data/customTemplates/dashboard/cmd.info.string.Netatmo_therminfo/fondnetatmo.png" style="width:150px; top:2px"/>
 		</div>
 		<div class="value-consigneent#id#"></div>
 		<div class="value-consigneoff#id#"></div>
 		<div class="value-consignedec#id#" style=""></div>
 		<div class="value-temperatureent#id#"></div>
 		<div class="value-temperaturedec#id#" style=""></div>
-		<marquee class="programmedefile#id#" style="color:black; position:absolute;top:145px;left:10px; width:130px; height:180px; z-index:2; font-size:12px"></marquee>
-		<div class="programmefixe#id#" style="color:black; position:absolute;top:145px;left:10px; width:130px; height:180px; z-index:2; font-size:12px"></div>
+		<marquee class="programmedefile#id#" style="color:black; position:absolute;top:140px;left:10px; width:130px; z-index:2; font-size:12px"></marquee>
+		<div class="programmefixe#id#" style="color:black; position:absolute;top:140px;left:10px; width:130px; z-index:2; font-size:12px"></div>
 		<img class="IMGmode#id#" src="data/customTemplates/dashboard/cmd.info.string.Netatmo_therminfo/manual.png" />
 		<img class="IMGbatterie#id#" src="data/customTemplates/dashboard/cmd.info.string.Netatmo_therminfo/battery_min.png" />
 		<img class="IMGwifi#id#" src="data/customTemplates/dashboard/cmd.info.string.Netatmo_therminfo/wifi_null.png" />
@@ -24,17 +24,16 @@
 		}
 		img.IMGmode#id# {
 			width:30px;
-			height:30px;
 			position:absolute;
-			top:45px;
-			left:15px;
+			top:25px;
+			left:7px;
 			z-index:2;
 		}
 		img.IMGbatterie#id# {
 			width:25px;
 			height:10px;
 			position:absolute;
-			top:45px;
+			top:20px;
 			left:115px;
 			z-index:2;
 		}
@@ -42,7 +41,7 @@
 			width:25px;
 			height:20px;
 			position:absolute;
-			top:65px;
+			top:45px;
 			left:115px;
 			z-index:2; 
 		}
@@ -51,10 +50,9 @@
 			font-size:40px;
 			font-weight:bold;
 			position:absolute;
-			top:7px;
-			left:3px;
+			top:32px;
+			left:0px;
 			width:150px;
-			height:180px;
 			z-index:2;
 			letter-spacing: 2px;
 			color: 	white;
@@ -67,7 +65,6 @@
 			top:15px;
 			left:5px;
 			width:150px;
-			height:180px;
 			z-index:2;
 			letter-spacing: 2px;
 			color: 	white;
@@ -76,9 +73,8 @@
 			font-family: "Square"; 
 			font-size:12px;
 			position:absolute;
-			top:15px;
+			top:40px;
 			width:150px;
-			height:180px;
 			z-index:2;
 			letter-spacing: 2px;
 			color: 	white;
@@ -88,9 +84,8 @@
 			font-size:60px;
 			font-weight:bold; 
 			position:absolute;
-			top:75px; 
+			top:105px; 
 			width:150px; 
-			height:180px; 
 			z-index:2;
 			letter-spacing: 2px;
 			color: 	black;
@@ -100,9 +95,8 @@
 			font-size:18px;
 			font-weight:bold;
 			position:absolute;
-			top:88px;
+			top:118px;
 			width:150px;
-			height:180px;
 			z-index:2;
 			letter-spacing: 2px;
 			color: 	black;
@@ -160,13 +154,13 @@
 				}
 				$('.cmd[data-cmd_uid=#uid#] .value-consigneoff#id#').hide();
 				if (consigneent == 11) {
-					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:20px;');
+					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:17px;');
 				} else if (consigneent == 21 || consigneent == 31) {	
-					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:25px;');
+					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:22px;');
 				} else if (consigneent >= 10 && consigneent < 20) {
-					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:27px;');
+					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:24px;');
 				} else {
-					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:31px;');
+					$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').empty().attr('style', 'left:27px;');
 				}
 				$('.cmd[data-cmd_uid=#uid#] .value-consignedec#id#').html(consignedec);
 			}
