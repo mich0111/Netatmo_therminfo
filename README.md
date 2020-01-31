@@ -7,7 +7,7 @@ Widget Netatmo_therminfo de @Nemeraud porté en V4 avec l'autorisation de son au
 Son utilisation est la suivante.
 1. Création d'un virtuel contenant un info autre.
 2. Renseigner la valeur de cette info sur la même ligne, séparée par des virgules et dans l'ordre indiqué, les informations en provenance de l'équipement NETATMO THERMOSTAT suivantes :
-    - Mode
+    - Consigne
     - Température
     - Statut pour mobile
     - Mode
