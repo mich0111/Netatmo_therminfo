@@ -111,9 +111,9 @@
 			var consigne = stateListe[0];
 			var temperature = stateListe[1];
 			var programme_origine = stateListe[2].replace("\"","");
-			var programme = programme_origine.replace("\"","");
+			var programme = programme_origine.replace(/ /g,"");
 			var mode_origine = stateListe[3].replace("\"","");
-			var mode = mode_origine.replace("\"","");
+			var mode = mode_origine.replace(/ /g,"");
 			var batterie = stateListe[4];
 			var wifi = stateListe[5];
 			var debug = "";
